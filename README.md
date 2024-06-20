@@ -18,13 +18,13 @@ ___
 1. Клонируйте репозиторий:
 
   ```sh
-  git clone https://github.com/xannykov/ShakalRoflBot.git
+  git clone https://github.com/xannykov/TasteOfSoundBot.git
   ```
 
-2. Переход в директорию ShakalRoflBot:
+2. Переход в директорию TasteOfSoundBot:
 
   ```sh
-  cd ShakalRoflBot
+  cd TasteOfSoundBot
   ```
 
 3. Создание виртуального окружения:
@@ -39,7 +39,15 @@ ___
   pip install -r requirements.txt
   ```
 
-5. Перейдите в *utils.py* и в строчке ```bot = telebot.TeleBot('TOKEN')``` введите свой TOKEN.
+5. Перейдите в *utils.py* и в строчках 
+   
+   ```bot = telebot.TeleBot('TOKEN')``` 
+
+   ```client = Client('TOKEN').init()``` 
+   
+   введите свой TOKEN.
+
+   Токен чат-бота можно узнать в [@BotFather](https://t.me/BotFather), а токен Яндекс Музыки можно узнать прочитав [документацию](https://yandex-music.readthedocs.io/en/main/index.html#id3).
 
 6. Запуск:
    

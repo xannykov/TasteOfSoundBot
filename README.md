@@ -30,16 +30,22 @@ ___
 3. Создание виртуального окружения:
 
   ```sh
-  py -m venv venv
+  py -m venv .venv
   ```
 
-4. Установите зависимости:
+4. Создание виртуального окружения:
+
+```sh
+.venv\Scripts\activate
+```
+
+5. Установите зависимости:
 
   ```sh
   pip install -r requirements.txt
   ```
 
-5. Перейдите в *utils.py* и в строчках 
+6. Перейдите в *utils.py* и в строчках 
    
    ```bot = telebot.TeleBot('TOKEN')``` 
 
@@ -49,7 +55,7 @@ ___
 
    Токен чат-бота можно узнать в [@BotFather](https://t.me/BotFather), а токен Яндекс Музыки можно узнать прочитав [документацию](https://yandex-music.readthedocs.io/en/main/index.html#id3).
 
-6. Запуск:
+7. Запуск:
    
   ```sh
   py main.py
